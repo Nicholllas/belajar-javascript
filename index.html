@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <!-- Mengubah text html menjadi tanggal -->
+    <h2>My first Javascript</h2>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Klik untuk mendapatkan jam sekarang</button>
+
+    <p id="demo">Text Ini akan berubah menjadi tanggal</p>
+
+    <!-- Mengubah text HTML menggunakan Javascript -->
+    <h2>Javascript Bisa mengubah text paragraf loh</h2>
+    <p id="demo1">Saya tidak bisa Javascript</p>
+    <button type="button" onclick="document.getElementById('demo1').innerHTML = `Saya Bisa Javascript`">Klik Tombol</button>
+
+    <!-- Memanipulasi value atribut dengan js -->
+    <h2>Javascript bisa Memanipulasi nilai atribut loh</h2>
+    <p>Dalam hal ini nilai yang di manipulasi adalah nilai gambar</p>
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Lampu Mati</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px" alt="Lampu Mati">
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Lampu Nyala</button>
+
+    <!-- Javascript juga bisa Memanipulasi CSS -->
+    <h2>Javascript juga bisa memanipulasi CSS</h2>
+    <p id="demo2">Tulisan ini akan membesar ketika tombol dibawah di klik</p>
+    <button onclick="document.getElementById('demo2').style.fontSize='35px'">Klik disini coy</button>
+</body>
+</html>
